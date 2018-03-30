@@ -1,0 +1,6 @@
+git branch /// muestra las ramas  
+git branch nombre // crea una rama  
+git checkout // moverse en las ramas  
+git branch -D // borra ramas  
+git merge Rama // adiciona toda la rama en la rama que estamos posicionados 
+git checkout -b nombre //Crea la rama nombre y se mueve a ella
