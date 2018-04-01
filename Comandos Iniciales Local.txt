@@ -4,11 +4,11 @@ git status // muestra lo que ya subimos o lo que nos falta por subir
 
 git add // adiciona carpetas 
 
-git commit -m "mensaje" /// asigna cmentarios de lo que cambiamos 
+git commit -m "mensaje" /// asigna comentarios de lo que cambiamos 
 
-git log /// miestra todos los commit que hicimos 
+git log /// muestra todos los commit que hicimos 
 
-git checkout 
+git checkout <hash> //Viajar a un commit anterior
 
 git reset --soft  //no borra codigo  
 git reset --mixed // avanzado 
