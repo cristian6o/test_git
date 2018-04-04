@@ -1,0 +1,34 @@
+git commit --amend -m "Nuevo titulo" //Renombrar el commit actual
+
+git push origin master -f //Subir cambios de forma forzada (porque git no halla algun cambio, es solo el renombre de commit)
+
+
+Tag -> Se usa para marcar un punto en el que se halle el proyecto
+
+*Tag Anotada:
+git tag -a v1.0 -m "Mensaje"
+Son almacenadas como objetos completos dentro de la base de Git y contienen mas información.
+
+*Tag ligera:
+git tag v1.0 
+Crea un tag más simple y con poca información
+
+-----
+* Estas tag se le añaden al último commit
+
+¿y si quiero que queden para todas los commits?
+R/ Especificacion de tags
+
+git tag -a v1.0 -m "Mensaje" SHA_del_commit
+
+------------
+** Importante **
+El tag no se sube al hacer push normal, solo suben los commits para subir los tags se debe dar el siguiente comando
+
+git push origin v0.8
+
+Para subir todos los tags
+git push origin --tags
+
+
+
