@@ -10,6 +10,6 @@ git log /// muestra todos los commit que hicimos
 
 git checkout <hash> //Viajar a un commit anterior
 
-git reset --soft  //no borra codigo  
-git reset --mixed // avanzado 
-git reset --hard   //borra todo
+git reset --soft  //Viaja y no borra codigo  
+git reset --mixed //Viaje avanzado 
+git reset --hard   //Viaja y borra todo

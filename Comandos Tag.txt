@@ -3,7 +3,7 @@ git commit --amend -m "Nuevo titulo" //Renombrar el commit actual
 git push origin master -f //Subir cambios de forma forzada (porque git no halla algun cambio, es solo el renombre de commit)
 
 
-Tag -> Se usa para marcar un punto en el que se halle el proyecto
+Tag -> Se usa para marcar un punto en el que se halle el proyecto (una "versión")
 
 *Tag Anotada:
 git tag -a v1.0 -m "Mensaje"

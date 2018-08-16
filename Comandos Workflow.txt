@@ -1,0 +1,36 @@
+*** Importante ***
+- El primer paso es crear la organización
+- Creada la organización se dan las invitaciones
+  a los colaboradores y acto seguido se les ofrece los permisos
+- El repositorio se puede ceder desde la configuración de github
+- Al pasar el repositorio personal al de organización ya es posible todos trabajar sobre el
+
+*******
+
+comandos
+
+git branch -a -> muestra las ramas ocultas y las estandar
+git fetch origin -> baja los cambios del repositorio remoto a la rama oculta origin/master
+git merge origin/master -> combina la rama origin/master con la rama master local
+git push origin master -> subo mis cambios
+NOTA: se efectua entonces en secuencia fetch y merge. [ y push en caso de tener commits por subir]
+   git pull origin master combina estos dos comandos
+git remote -v -> muestra las conexiones remotas
+git remote remove origin -> elimina la conexion remota origin
+NOTA 2: cuando no permite hacer push puede deberse a que no se ha actualizado desde el repositorio remoto (hay commits remotos por traer al repo local)
+NOTA 3: cuando git descubre cambios sobre la misma linea de codigo hace un merge notificando un error y en el código deja un comentario explícito sobre dicha(s) línea(s). Advertencia: Manuall Merge
+
+-----
+Cuando se hace un fork de un proyecto del que no se es colaborador
+debo realizar fecth de una nueva rama oculta "upstream": 
+
+git fecth upstream -> paso 1. cambios repo original del cual se hizo fork
+git merge upstream/master 
+git fecth origin -> paso 2. cambios del repo clon (el fork en mis repositorios)
+git merge origin/master
+* hago cambios *
+git push origin master
+Habiendo hecho esto, en github doy clic en el botón [New Pull Request] 
+el dueño del repo original ya lo acepta o rechaza
+----
+
